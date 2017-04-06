@@ -8,13 +8,14 @@
 	<!--<link rel="stylesheet" type="text/css" href="bootstrap.css">-->
 	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<script src="//www.powr.io/powr.js" external-type="html"></script> 
+	<!--<script src="//www.powr.io/powr.js" external-type="html"></script>-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </header>
 
 <body>
 	<div class="wrapper">
 		<ul class="navBar">
-			<li class="icon">Icon</li>
+			<a href="#home"><li class="icon"><img id="icon" src="http://i.imgur.com/aRsMSYg.png" alt="SciSquad"></li></a>
 			<li class="navItems scrollMargin">Lecture Series</li>
 			<li class="navItems">Contact</li>
 			<li class="navItems">Programs</li>
@@ -38,6 +39,7 @@
 				</span>
 			</div>
 		</div>
+		<!-- Old version info section
 		<div id="info" class="row">
 			<h1 class="tempFix">What We're Doing</h1>
 			<div class="col-sm-4 event">
@@ -46,6 +48,18 @@
 				</div>
 				<p>rick</p>
 				<p>rolled</p>
+			</div>
+		</div>-->
+		<div id="info">
+			<h1 id="infoTitle" class="tempFix">What We're Doing</h1>
+			<div align="center">
+				<div id="testingWell" class="flex-container">
+					<div class="flex-item">
+						<iframe width="90%" height="240" style="margin-top: 5px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+						<p>rick</p>
+						<p>rolled</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="theTeam" class="row">
@@ -71,5 +85,5 @@
 <footer>
 	<div align="center"><button class="btn btn-danger">Bored?</button></div>
 	<p id = "counter" class="text-center feet"><br></p>
-	<p class="text-center feet"><span id="tee-hee">Made</span> <span id="reset">by</span> high school student <a href="http://codepen.io/RyanDraves/">Ryan Draves</a>.</p>
+	<p class="text-center feet"><span id="tee-hee">Made</span> <span id="reset">by</span> high school student <a id="author" href="http://codepen.io/RyanDraves/">Ryan Draves</a>.</p>
 </footer>
