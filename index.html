@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <title>TheSciSquad</title>
+<meta charset="UTF-8">
 <header>
 	<!--<script src="jquery-3.1.1.min.js"></script>-->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -16,22 +17,23 @@
 	<div class="wrapper">
 		<ul class="navBar">
 			<a href="#home"><li class="icon"><img id="icon" src="http://i.imgur.com/aRsMSYg.png" alt="SciSquad"></li></a>
-			<li class="navItems scrollMargin">Lecture Series</li>
-			<li class="navItems">Contact</li>
-			<li class="navItems">Programs</li>
-			<a href="#home"><li class="navItems">Home</li></a>
+			<a href="lectureSeries.html"><li class="navItems scrollMargin">Lecture Series</li></a>
+			<a href="contact.html"><li class="navItems">Contact</li></a>
+			<a href="programs.html"><li class="navItems">Programs</li></a>
+			<a href="#home"><li class="navItems selected">Home</li></a>
 		</ul>
-		<div id="home">
-			<div class="homeAlign">
-			<h1 class="tempFix" id="homeTitle">The Science Squad</h1>
-			<div class="block">Sign up for MOSS 2017!</div>
-			<div class="block">Attend the Lecture Series</div>
+		<div id="home" class="main">
+			<div class="mainAlign">
+			<h1 class="mainTitle" id="homeTitle">The Science Squad</h1>
+			<a href="programs.html"><button class="block">Sign up for MOSS 2017!</button></a>
+			<br>
+			<a href="lectureSeries.html"><button class="block">Attend the Lecture Series</button></a>
 			</div>
 		</div>
-		<div id="about" class="row">
+		<div id="about" class="row second">
 			<div class="col-md-6 col-md-offset-3">
-				<h1 class="tempFix" id="aboutTitle"><b>About Us:</b></h1>
-				<p id="aboutText">	Hello! Welcome to the Science Squad! We are a nonprofit made for youth, by youth, that promotes scientific inquiry and the pursuit of STEM careers in Western Michigan. Our goal is to engage the youth of Western Michigan in activities that will better prepare our generation for the scientific and technological advances that loom before us. We host events such as science fairs and summer camps, as well as presentations on scientific breakthroughs and misconceptions. Every event that we host is completely free. To view some of our programs, check the tab above, or to fulfill daily dose of science, head over to our <a href="#">YouTube Channel</a>, where we host a live lecture series with professionals, or our <a href="3">Facebook</a>, where we often share entertaining science articles and videos.</p>
+				<h1 id="aboutTitle" class="secondTitle"><b>About Us:</b></h1>
+				<p id="aboutText" class="secondText">	Hello! Welcome to the Science Squad! We are a nonprofit made for youth, by youth, that promotes scientific inquiry and the pursuit of STEM careers in Western Michigan. Our goal is to engage the youth of Western Michigan in activities that will better prepare our generation for the scientific and technological advances that loom before us. We host events such as science fairs and summer camps, as well as presentations on scientific breakthroughs and misconceptions. Every event that we host is completely free. To view some of our programs, check the tab above, or to fulfill daily dose of science, head over to our <a href="#">YouTube Channel</a>, where we host a live lecture series with professionals, or our <a href="3">Facebook</a>, where we often share entertaining science articles and videos.</p>
 				<span>
 					<a href="https://www.facebook.com/thescisquad"><img id="facebook" class = "socialMedia" src = "http://image.freepik.com/free-icon/facebook-letter-logo_318-40258.jpg"></a>
 					<a href="https://twitter.com/thescisquad_"><img id="twitter" class = "socialMedia" src = "http://image.freepik.com/free-icon/twitter-logo_318-40459.jpg"></a>
@@ -39,22 +41,11 @@
 				</span>
 			</div>
 		</div>
-		<!-- Old version info section
-		<div id="info" class="row">
-			<h1 class="tempFix">What We're Doing</h1>
-			<div class="col-sm-4 event">
-				<div align="center">
-					<iframe width="100%" height="240" style="margin-top: 5px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<p>rick</p>
-				<p>rolled</p>
-			</div>
-		</div>-->
-		<div id="info">
-			<h1 id="infoTitle" class="tempFix">What We're Doing</h1>
+		<div id="info" class="third">
+			<h1 id="infoTitle" class="thirdTitle">What We're Doing</h1>
 			<div align="center">
-				<div id="testingWell" class="flex-container">
-					<div class="flex-item">
+				<div id="infoEvents" class="flex-container-Home">
+					<div class="flex-item-Home">
 						<iframe width="90%" height="240" style="margin-top: 5px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
 						<p>rick</p>
 						<p>rolled</p>
@@ -62,8 +53,8 @@
 				</div>
 			</div>
 		</div>
-		<div id="theTeam" class="row">
-			<h1 class="tempFix" id="teamTitle">The Team</h1>
+		<div id="theTeam" class="row fourth">
+			<h1 class="fourthTitle" id="teamTitle">The Team</h1>
 			<div class="col-sm-4">
 				<img src="http://i.imgur.com/Q3lSKHP.jpg" class="teamPicture">
 				<h2 class="tempFix"><b>Arya Rao</b></h2>
@@ -83,7 +74,15 @@
 	</div>
 </body>
 <footer>
-	<div align="center"><button class="btn btn-danger">Bored?</button></div>
+	<div align="center"><button class="btn btn-danger" id="bored">Bored?</button></div>
 	<p id = "counter" class="text-center feet"><br></p>
 	<p class="text-center feet"><span id="tee-hee">Made</span> <span id="reset">by</span> high school student <a id="author" href="http://codepen.io/RyanDraves/">Ryan Draves</a>.</p>
 </footer>
+
+<script>// Add a new event with newEvent([link], [title], [description]); below this line (from the TOP of the list).
+	newEvent("https://www.youtube.com/watch?v=YKJ1zhEBHEY","The Lecture Series: March 20, Dr. Joe Pole","On March 20, The Science Squad will host our fifth lecture in the Lecture Series! We will be featuring Dr. Joe Pole, a practicing optometrist at the Ferris State University. Dr. Schonbaum will be discussing his experience with scleral and GP lens research!");
+	newEvent("https://www.youtube.com/watch?v=a_RMDQyddHo","Lecture Series #4: Kelley Templin","Kelley Templin is an Environmental Health and Safety Professional with Cargill in Hersey, MI. She has over 12 years experience in Environmental Health and Safety. Kelley earned a degree in Industrial Chemistry Technology from Ferris State University. She is a licensed Medical First Responser, a member of the American Chemical Society, and a member of the American Society of Safety Engineers.");
+	newEvent("https://www.youtube.com/watch?v=khsA4bvnsvg","Lecture Series #3: Dr. Chris Schonbaum","On February 27, The Science Squad will host our third lecture in the Lecture Series! We will be featuring Dr. Chris Schonbaum, a practicing geneticist at the University of Chicago. Dr. Schonbaum will be discussing his experience with CRISPR gene therapy!");
+	newEvent("https://www.youtube.com/watch?v=BhPUg-YdEvE","Lecture Series #2: Mr. Paul Filio","On Feb. 20, The Science Squad will host our second lecture in the Lecture Series! We will be featuring Mr. Paul Filio, a political scientist affiliated with Northwestern University's GLL. He will be discussing the merits of history and politics as a scientific subject!");
+	newEvent("https://www.youtube.com/watch?v=dsdlBVN3Sac", "Lecture Series #1: Dr. Anil Venkatesh", "On February 13, The Science Squad will host our first lecture in the Lecture Series! We will be featuring Dr. Anil Venkatesh, a mathematician/engineer with degrees from UPenn and Duke. Dr. Venkatesh will be discussing his research on the mathematics of music theory!");
+</script>
