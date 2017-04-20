@@ -45,22 +45,25 @@ body {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 7px 5px 7px 5px;
-	border-radius: 10px;
 }
 .navItems:hover {
 	color: #564d72;
+	border-color: #564D72;
 }
 .scrollMargin {
 	margin-right: 20px;
 }
-.tempFix {
-	color: white;
+.selected {
+	border: #429C80 solid 5px;
+	border-radius: 10px;
+	margin: 5px;
+	width: 130px;
 }
-.homeAlign {
+.mainAlign {
 	margin-top: 160px;
 	margin-left: 5%;
 }
-#home {
+.main {
 	height: 630px;
 	background-color: grey;
 	background-repeat: no-repeat;
@@ -69,7 +72,7 @@ body {
 	background-image: url(http://i.imgur.com/8K3v2gL.jpg);
 	padding-top: 50px;
 }
-#homeTitle {
+.mainTitle {
 	color: white;
 	text-align:left;
 	font-size: 4rem;
@@ -93,24 +96,30 @@ p {
 	border-radius: 10px;
 	border: white 3px solid;
 }
+.blockWidth {
+	width: 300px;
+}
 .block:hover {
 	background-color: transparent;
 	color: white;
 }
-#about {
+a {
+	text-decoration: none !important;
+}
+.second {
 	background-color: rgb(250,250,250);
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin: 0;
 }
-#aboutTitle {
+.secondTitle {
 	color: black;
 	text-align: left;
 	margin-left: 10px;
 	margin-right: 20px;
 	padding-bottom: 3%;
 }
-#aboutText{
+.secondText{
 	margin-top: 2%;
 	margin-left: 10px;
 	margin-right: 20px;
@@ -119,7 +128,7 @@ p {
 }
 p a {
 	color: black;
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 .socialMedia {
 	width: 25px;
@@ -131,20 +140,17 @@ p a {
 	width: 28px;
 	height: 28px;
 	margin-bottom: -6px;
+	margin-right: 0px;
 }
-#info {
+.third {
 	background-color: #429C80;
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
-#infoTitle {
+.thirdTitle {
 	margin-bottom: 3%;
 }
-.event {
-	background-color: white;
-	border: 5px solid rgb(200,200,200);
-}
-.flex-container {
+.flex-container-Home {
 	display: -webkit-flex;
 	display: flex;
 	justify-content: space-around;
@@ -152,27 +158,26 @@ p a {
 	align-items: center;
 	flex-wrap: wrap;
 }
-.flex-item {
+.flex-item-Home {
 	background-color: white;
 	border: 5px solid rgb(200,200,200);
 	border-radius: 10px;
 	width: 500px;
 	margin: 10px;
 }
-#theTeam {
+.justify {
+	text-align: justify;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.fourth {
 	background-color: #564d72;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin: 0;
 }
-#teamTitle {
+.fourthTitle {
 	margin-bottom: 3%;
-}
-.teamPicture {
-	display: block;
-	margin: auto;
-	height: 200px;
-	width: 200px;
 }
 h2 {
 	color: white;
@@ -189,8 +194,8 @@ h2 {
 	margin-right: auto;
 }
 footer {
-	padding-top: 1%;
-	padding-bottom: 1%;
+	padding-top: 15px;
+	padding-bottom: 10px;
 	background-color: rgb(50,50,50);
 }
 .feet {
@@ -201,4 +206,91 @@ footer {
 }
 #author {
 	color: white;
+}
+/* Home Specific CSS */
+.flex-container-Home {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.flex-item-Home {
+	background-color: white;
+	border: 5px solid rgb(200,200,200);
+	border-radius: 10px;
+	width: 500px;
+	margin: 10px;
+}
+.teamPicture {
+	display: block;
+	margin: auto;
+	height: 200px;
+	width: 200px;
+}
+/* Lecture Series CSS */
+.flex-container-Lecture {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.flex-item-Lecture {
+	width: 500px;
+	margin: 30px;
+	color: white;
+}
+/* Programs CSS */
+.miniBlock {
+	background-color: transparent;
+	width: 100px;
+	color: black;
+	text-align: center;
+	margin-top: 25px;
+	padding: 10px;
+	border: black 3px solid;
+	display: button;
+}
+.miniBlock:hover {
+	color: rgb(150,150,150);
+	border-color: rgb(150,150,150);
+}
+.collapseSpacing {
+	margin-bottom: 10px;
+}
+/* Contact CSS */
+#formTitle {
+	font-size: 3rem;
+	margin-left: 0px;
+	text-align: justify;
+}
+.contactForm {
+	font-size: 2rem;
+	font-family: 'Open Sans', sans-serif;
+}
+input {
+	margin: 10px 0px 10px 0px;
+}
+.input {
+	background-color: transparent;
+	border: 1px solid rgb(150,150,150);
+	border-radius: 5px;
+}
+.tel {
+	width: 150px;
+}
+#submit {
+	text-align: center;
+	width: 150px;
+	font-size: 24px;
+	border: 1px solid rgb(150,150,150);
+	border-radius: 5px;
+	background-color: transparent;
+}
+#submit:hover {
+	background-color: rgb(200,200,200);
 }
