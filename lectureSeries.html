@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<title>Lecture Series - TheSciSquad</title>
+<meta charset="UTF-8">
+<header>
+	<!--<script src="jquery-3.1.1.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap.css">-->
+	<script src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!--<script src="//www.powr.io/powr.js" external-type="html"></script>-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</header>
+
+<body>
+	<div class="wrapper">
+		<ul class="navBar">
+			<a href="index.html"><li class="icon"><img id="icon" src="http://i.imgur.com/aRsMSYg.png" alt="SciSquad"></li></a>
+			<a href="#lectures"><li class="navItems selected scrollMargin">Lecture Series</li></a>
+			<a href="contact.html"><li class="navItems">Contact</li></a>
+			<a href="programs.html"><li class="navItems">Programs</li></a>
+			<a href="index.html"><li class="navItems">Home</li></a>
+		</ul>
+		<div id="lectures" class="main">
+			<div class="mainAlign">
+				<h1 class="tempFix mainTitle" id="lectureTitle">Lecture Series</h1>
+				<a href="https://www.youtube.com/channel/UCJ7iuU_874EAKFJpkmdPNSw"><button class="block">Visit the Channel</button></a>
+			</div>
+		</div>
+		<div id="about" class="row second">
+			<div class="col-md-6 col-md-offset-3">
+				<h1 id="aboutTitle" class="secondTitle"><b>About the Lecture Series:</b></h1>
+				<p id="aboutText" class="secondText">	The Lecture Series is a set of free talks brought to you by scientific professionals across the nation. This year, we are bringing you face to face with professionals from top institutions such as the University of Chicago, Yale University, the University of Pennsylvania, Northwestern University, and more! The lectures will air on YouTube Live, and a list of lecturers is on this page. Learn more on our programs page!</p>
+				<span>
+					<a href="https://www.facebook.com/thescisquad"><img id="facebook" class = "socialMedia" src = "http://image.freepik.com/free-icon/facebook-letter-logo_318-40258.jpg"></a>
+					<a href="https://twitter.com/thescisquad_"><img id="twitter" class = "socialMedia" src = "http://image.freepik.com/free-icon/twitter-logo_318-40459.jpg"></a>
+					<a href="mailto:thescisquad@gmail.com"><img id="mail" class = "socialMedia" src = "http://image.freepik.com/free-icon/email-filled-closed-envelope_318-75717.jpg"></a>
+				</span>
+			</div>
+		</div>
+		<div id="upcomingLectures" class="third">
+			<h1 id="upcomingTitle" class="thirdTitle">Upcoming Lecturers</h1>
+			<div id="upcomingEvents" class="flex-container-Lecture"></div>
+		</div>
+		<div id="pastLectures" class="row fourth">
+			<h1 class="fourthTitle" id="pastTitle">Past Lectures</h1>
+			<div id="pastEvents" class="flex-container-Lecture"></div>
+		</div>
+	</div>
+</body>
+<footer>
+	<div align="center"><button class="btn btn-danger" id="bored">Bored?</button></div>
+	<p id = "counter" class="text-center feet"><br></p>
+	<p class="text-center feet"><span id="tee-hee">Made</span> <span id="reset">by</span> high school student <a id="author" href="http://codepen.io/RyanDraves/">Ryan Draves</a>.</p>
+</footer>
+
+<script>// Add a new event with upcomingLecture([name], [image link], [date], [description]); below this list (from the BOTTOM of the list).
+		// Add a past event by replacing "upcomingLecture" with "pastLecture" of your existing function.
+	upcomingLecture("Kelly Templin", "http://thescisquad.weebly.com/uploads/2/8/0/2/28020467/published/ktemplin.jpg?1489752060", "March 6","Kelley Templin is an Environmental Health and Safety Professional with Cargill in Hersey, MI. She has over 12 years experience in Environmental Health and Safety. Kelley earned a degree in Industrial Chemistry Technology from Ferris State University. She is a licensed Medical First Responser, a member of the American Chemical Society, and a member of the American Society of Safety Engineers.");
+	upcomingLecture("Joe Pole", "http://thescisquad.weebly.com/uploads/2/8/0/2/28020467/published/pole-joe.jpg?1489752207", "March 20", "Dr. Joe Pole received his Ph.D. from the University of Virginia in 2010, where he participated in the construction and characterization of a small animal (mouse and rat) x-ray/single gamma ray tomographic (3D) imaging system. His work focused on the development of acquisition and image processing software, detector noise and resolution characterization, image contrast enhancement, and the development of respiratory and cardiac gating equipment for small animals. He also acquired and analyzed small animal three-dimensional image data for biological research groups. He was previously employed at Lincoln Memorial University in Harrogate, Tennessee, where he taught the lecture and laboratory sections of an introductory physics course for pre-med students and a conceptual physics course for non-science students.");
+	pastLecture("Anil Venkatesh", "http://thescisquad.weebly.com/uploads/2/8/0/2/28020467/published/anil-venkatesh.jpg?1485445096", "February 13", "Anil Venkatesh is a teacher, scholar, musician and game designer. He earned a B.A. in mathematics and a B.S.E. in electrical engineering at the University of Pennsylvania, and pursued graduate studies at Duke University, where he earned a Ph.D. in mathematics. Dr. Venkatesh did his doctoral work in algebra and topology, but his current research program uses applied mathematics to study topics in signal processing and music theory. He is particularly interested in research problems that are accessible to undergraduates.");
+	pastLecture("Paul Filio","http://thescisquad.weebly.com/uploads/2/8/0/2/28020467/published/img-1304.jpg?1485822419", "February 20", "Paul Filio is currently a history/government instructor for Northwestern University's Center For Talent Development. He has taught in secondary education for thirty years, and serves as an AP Consultant in World History. In addition to politics, Mr. Filio is interested in collecting old movie posters and other eclectic objects (usually historical in nature). He is ecstatic to share the ways in which science can be used to evaluate the way the world operates, specifically through political science.");
+	pastLecture("Chris Schonbaum","http://thescisquad.weebly.com/uploads/2/8/0/2/28020467/published/schon.jpeg?1485822426", "February 27", "Chris Schonbaum received his B.S. in Chemistry from Rhodes College and his PhD in Molecular Biology from Vanderbilt University. After post-doctoral training at the University of Chicago, Dr. Schonbaum joined the faculty as a Lecturer at the University of Chicago where he is lab director for the undergraduate cell biology, genetics, and developmental biology courses. He also runs a summer laboratory research program for high school students. Given his background of making seemingly complex topics accessible to youth across the nation, Dr. Schonbaum looks forward to lecturing with The Science Squad.");
+</script>
